@@ -1,11 +1,14 @@
-div {
+.maincontent {
     margin-left: 40%;
 }
 
 tbody {
     text-align: center;
 }
-tr {
+tbody > tr {
     color: white; 
     mix-blend-mode:difference !important;
+}
+.smalltxt {
+    font-size: .7em;
 }
