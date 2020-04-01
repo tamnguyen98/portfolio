@@ -1,0 +1,11 @@
+div {
+    margin-left: 40%;
+}
+
+tbody {
+    text-align: center;
+}
+tr {
+    color: white; 
+    mix-blend-mode:difference !important;
+}
