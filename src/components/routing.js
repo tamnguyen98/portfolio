@@ -8,6 +8,7 @@ import Contact from './contact';
 const Routing = (props) => (
     <Switch location={props.location}>
         <Route exact path="/" component={Landing} />
+        <Route path="/portfolio" component={Landing} />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects}/>
     </Switch>

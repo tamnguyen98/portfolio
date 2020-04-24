@@ -6,12 +6,6 @@ import {Navbar, Container} from 'react-bootstrap'
 import { Link, Route } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-}
 
 function App() {
   return (
