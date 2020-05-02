@@ -1,40 +1,25 @@
 import React from 'react';
+import logo from './logo.svg';
 import './App.css';
-import { Layout, Content } from 'react-mdl';
-import Routing from './components/routing';
-import {Navbar, Container} from 'react-bootstrap'
-import { Link, Route } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 
 function App() {
   return (
-    <div id="main">
-    <Layout>
-        <Container className="nav-bar">
-            <Navbar expand="lg" sticky="top" variant="dark" style={{justifyContent:"center"}} className="importance-bold">
-                <Navbar.Brand><Link className="font-color" to="/">HOME</Link></Navbar.Brand>
-                <Navbar.Brand><Link className="font-color" to="/about">ABOUT</Link></Navbar.Brand>
-                <Navbar.Brand><Link className="font-color" onClick={window.scrollTo({ top: 0, behavior: 'smooth' })} to="/projects">PROJECTS</Link></Navbar.Brand>
-            </Navbar>
-        </Container>
-        
-        <Content>
-            <div className="page">
-                <Route render={({location}) => (
-                    <TransitionGroup>
-                        <CSSTransition
-                        key={location.key}
-                        timeout={700}
-                        classNames="fade">
-                            <Routing location={location}/>
-                        </CSSTransition>
-                    </TransitionGroup>
-                )}/>
-            </div>
-        </Content>
-    </Layout>
-  </div>  
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
