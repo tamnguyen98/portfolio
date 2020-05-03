@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.css';
-import { ParallaxProvider } from 'react-scroll-parallax';
+import './App.scss';
 
 function App() {
   return (
-    <ParallaxProvider>
-      <div>
-        Hello
+    <>
+      <div className="app-header">
+        <div className="welcome-text">Welcome to Tam's</div>
+        <h1>Portfolio 2020</h1>
       </div>
-    </ParallaxProvider>
+    </>
   );
 }
 
