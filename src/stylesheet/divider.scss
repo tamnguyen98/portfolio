@@ -1,0 +1,42 @@
+.diagonalTop{
+width: 0;
+height:0;
+position:relative;
+bottom:0px;
+border-bottom: 3rem solid $black;
+border-left: 100vw solid transparent;
+}
+
+.diagonalBottom{
+width: 0;
+height:0;
+position:relative;
+bottom:0px;
+border-top: 3rem solid $black;
+border-right: 100vw solid transparent;
+}
+
+.diagonalTop2{
+    width: 0;
+    height:0;
+    position:relative;
+    bottom:0px;
+    border-bottom: 3rem solid $black;
+    border-right: 100vw solid transparent;
+}
+
+.diagonalBottom2{
+    width: 0;
+    height:0;
+    position:relative;
+    bottom:0px;
+    border-top: 3rem solid $black;
+    border-left: 100vw solid transparent;
+}
+
+//Green Container
+.diagonalContent{
+// height:3rem;
+background:$black;
+overflow:hidden;
+}

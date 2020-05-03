@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+$header-txt: #E5DADA;
+$black: #02040F;
+
+@import "background.css";
+@import "divider.scss";
+
+:root{
+  color: $header-txt;
+}
+// Mobile
+@media only screen and (max-width: 990px) {
+  .welcome-text {
+    font-size: 1.2em;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 990px) {
+  .welcome-text {
+    font-size: 1.5em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Permanent Marker', cursive;
+  color: $header-txt;
+}
+
+.app-header {
+  width: 0em;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 10%;
+  padding-bottom: 5rem;
+  width: 100%;
+  display: block;
+  text-align: center;
+  align-items: center;
+  .welcome-text{
+    margin: 0 auto -5% auto;
+    height: 30%;
+    width: 60%;
+    padding: 0;
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+  // font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: $header-txt;
+  }
+  h1 {
+    margin: 0;
+    font-size: 10vw;
+    text-align: center;
+  }
+}
+
+.center-80 {
+  // margin: auto;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
+
+.section-title {
+  text-align: center;
+  margin: auto;
+}
