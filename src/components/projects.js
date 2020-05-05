@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Card, Button, CardGroup } from 'react-bootstrap';
-import ScrollArea from 'react-scrollbar';
+import { Parallax } from 'react-scroll-parallax';
 import FadeInSection from './fadein';
 import cImg from '../img/c_img.svg';
 import pyImg from '../img/python_img.svg';
@@ -29,10 +29,10 @@ const Projects = () => {
     return (
         <>
         <FadeInSection>
-            <div className="diagonalTop2"/>
+            <div className="diagonalTop2 new-sect"/>
                 <div className="diagonalContent">
                         <FadeInSection><h2 className="section-title">Projects</h2></FadeInSection>
-                    <Container fluid id="summary" className="diagonalContent center">
+                    <Container fluid className="diagonalContent center">
                     <FadeInSection>
                     <CardGroup>
                         <Project
@@ -67,6 +67,7 @@ const Projects = () => {
                     </Container>
                 </div>
             <div className="diagonalBottom2"/>
+
             {/*                                                         PYTHON                                                       */}
             <Container fluid className="center">
                 <CardGroup>

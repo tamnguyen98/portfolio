@@ -34,13 +34,16 @@ $bg-blue: #0A2039;
     margin: 0 auto -3% auto;
   }
   .section-title {
-    font-size: 2em;
+    font-size: 3em;
   }
   .a-card + .a-card {
     padding-left: 20px;
   }
   .card-group {
     margin: auto;
+  }
+  .new-sect {
+    padding-top: 30%;
   }
 }
 
@@ -129,4 +132,8 @@ h1, h2, h3 {
 }
 .card-group {
   width: 70%;
+}
+
+.card-title {
+  font-family: 'Permanent Marker', cursive;
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import './stylesheet/App.scss';
 import Projects from './components/projects';
 import FadeInSection from './components/fadein';
+import Education from './components/education';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       </FadeInSection>
         <div className="diagonalTop"/>
         <div className="diagonalContent">
-          <FadeInSection>
+          {/* <FadeInSection> */}
             <h2 className="section-title">Quick Description</h2>
             <div id="summary" className="center">
               I'm a Software Engineer with a Bachelor of Science in Computer Science from Washington
@@ -23,10 +24,11 @@ function App() {
               are pretty fun too. I have dipped my toes in variety of projects, ranging from web dev to
               AI.
             </div>
-          </FadeInSection>
+          {/* </FadeInSection> */}
         </div>
         <div className="diagonalBottom"/>
       <Projects/>
+      <Education/>
     </>
   );
 }
