@@ -1,29 +1,46 @@
+@import "~bootstrap/scss/bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 $header-txt: #E5DADA;
 $black: #02040F;
+$bg-blue: #0A2039;
 
 @import "background.css";
 @import "divider.scss";
 
-:root{
+:root, body{
   color: $header-txt;
+  overflow-x: hidden;
 }
 // Mobile
 @media only screen and (max-width: 990px) {
   .welcome-text {
+    margin: 0 auto -3% auto;
     font-size: 1.2em;
   }
+  .card-group {
+    padding-left: 10%;
+  }
+  .a-card + .a-card {
+    padding-top: 10px;
+  } 
 }
 
 // Desktop
 @media only screen and (min-width: 990px) {
   .welcome-text {
     font-size: 1.5em;
+    margin: 0 auto -3% auto;
   }
   .section-title {
     font-size: 2em;
+  }
+  .a-card + .a-card {
+    padding-left: 20px;
+  }
+  .card-group {
+    margin: auto;
   }
 }
 
@@ -44,7 +61,6 @@ h1, h2, h3 {
   text-align: center;
   align-items: center;
   .welcome-text{
-    margin: 0 auto -5% auto;
     height: 30%;
     width: 60%;
     padding: 0;
@@ -61,9 +77,8 @@ h1, h2, h3 {
   }
 }
 
-.center-80 {
-  // margin: auto;
-  width: 80%;
+.center {
+  width: 100%;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -84,4 +99,34 @@ h1, h2, h3 {
 .section-title {
   text-align: center;
   margin: auto;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.card-text {
+  overflow-y: scroll;
+  height: 150px;
+}
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: $black; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $bg-blue; 
+}
+.card.bg-custom {
+  background-color: $black;
+}
+
+.card.border-matching {
+  border-color: $bg-blue;
+  border-radius: 10px;
+  border-width: 3px;
+}
+.card-group {
+  width: 70%;
 }
