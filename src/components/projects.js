@@ -1,11 +1,13 @@
 import React from 'react';
-import { Container, Row, Card, Button, CardGroup } from 'react-bootstrap';
+import { Container, Card, Button, CardGroup, Accordion } from 'react-bootstrap';
 import FadeInSection from './fadein';
 import cImg from '../img/c_img.svg';
 import pyImg from '../img/python_img.svg';
 import reactImg from '../img/react_img.svg';
 import javaImg from '../img/Java_img.svg';
 import rubyImg from '../img/ruby_img.svg';
+import { useMediaQuery } from 'react-responsive'
+
 
 const Project = (props) => {
     return (
@@ -16,20 +18,24 @@ const Project = (props) => {
                 <Card.Text>
                     {props.desc}
                 </Card.Text>
-                <Button href={props.link} target="_blank" variant="primary">Visit Repo</Button>
+                { props.link.length > 0 &&
+                    <Button href={props.link} target="_blank" variant="primary">Visit Repo</Button>
+                }
+               
             </Card.Body>
             </Card>
     );
 }
 
-const Projects = () => {
+const Content = (props) => {
     return (
-        <>
         <FadeInSection>
             <div className="diagonalTop2 new-sect"/>
                 <div className="diagonalContent">
-                        <FadeInSection><h2 className="section-title">Some cool Projects</h2>
-                        <hr className="section-hr"/></FadeInSection>
+                    {!props.onMobile &&
+                       <FadeInSection><h2 className="section-title">Some cool Projects</h2>
+                       <hr className="section-hr"/></FadeInSection>
+                    }
                     <Container fluid className="diagonalContent center">
                     <FadeInSection>
                     <CardGroup>
@@ -86,6 +92,7 @@ const Projects = () => {
                     </CardGroup> 
                 </FadeInSection>
             </Container>
+            {/*                                                         Java                                                       */}
              <div className="diagonalTop2"/>
                 <div className="diagonalContent center">
                 <FadeInSection>
@@ -109,6 +116,7 @@ const Projects = () => {
                 </FadeInSection>
                 </div>
             <div className="diagonalBottom2"/>
+            {/*                                                         Web                                                       */}
                 <div className="center">
                 <FadeInSection>
                     <CardGroup style={{width:"50%"}}>
@@ -116,7 +124,7 @@ const Projects = () => {
                             title="Portfolio Website"
                             img={reactImg}
                             desc="This site was made with React.js and it's my first React project I've made."
-                            link="https://tamnguyen98.github.io/"/>
+                            link=""/>
                         <Project
                             title="Autolab (Capstone)"
                             img={rubyImg}
@@ -131,7 +139,39 @@ const Projects = () => {
                 </FadeInSection>
                 </div>
         </FadeInSection>
+    );
+}
 
+
+const Projects = () => {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-device-width: 990px)'
+      })
+    
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 990px)' })
+    
+    return (
+        <>
+        { isTabletOrMobile &&
+            <FadeInSection>
+                <div className="diagonalTop2"/>
+                <Accordion defaultActiveKey={0}>
+                <Card>
+                    <Card.Header>
+                    <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                        <FadeInSection><h2 className="section-title">Some cool Projects</h2><span style={{color:"White"}}>(TAP HERE)</span></FadeInSection>
+                    </Accordion.Toggle>
+                    </Card.Header>
+                    <Accordion.Collapse eventKey="0">
+                    <Card.Body><Content onMobile={true} /></Card.Body>
+                    </Accordion.Collapse>
+                </Card>
+                </Accordion>
+            <div className="diagonalBottom2"/>
+            </FadeInSection>
+        }
+        { isDesktopOrLaptop &&
+        <Content/>}
         </>
     );
 }

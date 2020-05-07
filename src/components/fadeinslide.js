@@ -15,7 +15,7 @@ function FadeInSection(props) {
   }, []);
   return (
     <div
-      className={`fade-in-slide-section ${isVisible ? 'is-visible' : ''}` + ' ' + props.class}
+      className={`fade-in-slide-section ${isVisible ? 'is-visible' : ''}`}
       ref={domRef}
     >
       {props.children}

@@ -187,3 +187,13 @@ hr.section-hr {
 .navbar > div {
   text-align: center;
 }
+
+.accordion .card {
+  background-color: $black;
+}
+
+
+.btn-link:hover, .btn-link span {
+  color: $header-txt;
+  text-decoration: none;
+}

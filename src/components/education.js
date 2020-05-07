@@ -45,7 +45,7 @@ const Education = () => {
                     <h3>Clark Community College</h3>
                     <span>Associates of Science in Computer Science<br/>
                           Fall 2016 - Summer 2018</span><br/>
-                    <p><u>Relevant Classes:</u> Intro to C, Discrete Structure, Intro to Data Structures, Data Structures {'&'} ObjectOriented</p>
+                    <p><u>Relevant Classes:</u> Intro to C, Discrete Structure, Intro to Data Structures, Data Structures {'&'} Object Oriented</p>
                   </Col>
                   <Col sm={6} lg={4}>
                     <Image style={{width:"100%"}} fluid src={clark}/>

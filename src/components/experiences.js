@@ -15,17 +15,17 @@ const Experiences = () => {
               <Row>
                 <Col>
                 <h3>Web Dev</h3>
-                <span>FREE LANCED<br/>
+                <span>FREELANCE<br/>
                   05/20 - 05/20</span>
                 <p>A small-scale, responsive website I design and develop for a client's painting business using the React JS framework. 
-                  You can check out the website at <a href="lgdprofessionalpainting.expert" target="_blank">www.lgdprofessionalpainting.expert</a></p>
+                  You can check out the website at <a href="https://lgdprofessionalpainting.expert/">www.lgdprofessionalpainting.expert</a></p>
                 </Col>
               </Row>
             </FadeInSection>
             <FadeInSection>
               <Row>
                 <Col>
-                <h3>Autolab Maintainer</h3>
+                <h3>Autolab Maintainance</h3>
                 <span>WASHINGTON STATE UNIVERSITY'S CAPSTONE<br/>
                   VANCOUVER, WA<br/>
                   09/19 - 05/20</span>
