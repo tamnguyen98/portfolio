@@ -5,6 +5,7 @@
 $header-txt: #E5DADA;
 $black: #02040F;
 $bg-blue: #0A2039;
+$hr-color: rgb(14, 47, 83);
 
 @import "background.css";
 @import "divider.scss";
@@ -12,6 +13,8 @@ $bg-blue: #0A2039;
 :root, body{
   color: $header-txt;
   overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 // Mobile
 @media only screen and (max-width: 990px) {
@@ -19,12 +22,23 @@ $bg-blue: #0A2039;
     margin: 0 auto -3% auto;
     font-size: 1.2em;
   }
+  .section-title {
+    font-size: 3em;
+  }
   .card-group {
     padding-left: 10%;
   }
   .a-card + .a-card {
     padding-top: 10px;
   } 
+  h3 {
+    font-size: 1.5rem;
+  }
+  .edu {
+    span {
+      font-size: .9rem;
+    }
+  }
 }
 
 // Desktop
@@ -88,12 +102,18 @@ h1, h2, h3 {
 
 .fade-in-section {
   opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-slide-section {
+  opacity: 0;
   transform: translateY(20vh);
   visibility: hidden;
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
-.fade-in-section.is-visible {
+.is-visible {
   opacity: 1;
   transform: none;
   visibility: visible;
@@ -103,6 +123,11 @@ h1, h2, h3 {
   text-align: center;
   margin: auto;
   text-transform: uppercase;
+}
+
+hr.section-hr {
+  width: 30%;
+  border-top: 3px solid $hr-color;
   padding-bottom: 20px;
 }
 
@@ -136,4 +161,29 @@ h1, h2, h3 {
 
 .card-title {
   font-family: 'Permanent Marker', cursive;
+}
+
+.edu {
+  span {
+    font-weight: 300; 
+  }
+  p {
+    padding-top: 10px;
+  }
+  .row + .row{
+    margin-top: 45px;
+  }
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.navbar.sticky-bottom {
+  margin-top: 20px;
+}
+
+.navbar > div {
+  text-align: center;
 }

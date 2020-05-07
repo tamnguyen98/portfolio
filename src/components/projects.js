@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Card, Button, CardGroup } from 'react-bootstrap';
-import { Parallax } from 'react-scroll-parallax';
 import FadeInSection from './fadein';
 import cImg from '../img/c_img.svg';
 import pyImg from '../img/python_img.svg';
@@ -10,7 +9,6 @@ import rubyImg from '../img/ruby_img.svg';
 
 const Project = (props) => {
     return (
-        // <FadeInSection class="a-card">
             <Card style={{width:"15rem"}} className="a-card" bg="custom" border="matching">
             <Card.Img variant="top" src={props.img} />
             <Card.Body>
@@ -21,7 +19,6 @@ const Project = (props) => {
                 <Button href={props.link} target="_blank" variant="primary">Visit Repo</Button>
             </Card.Body>
             </Card>
-        // </FadeInSection>
     );
 }
 
@@ -31,7 +28,8 @@ const Projects = () => {
         <FadeInSection>
             <div className="diagonalTop2 new-sect"/>
                 <div className="diagonalContent">
-                        <FadeInSection><h2 className="section-title">Projects</h2></FadeInSection>
+                        <FadeInSection><h2 className="section-title">Some cool Projects</h2>
+                        <hr className="section-hr"/></FadeInSection>
                     <Container fluid className="diagonalContent center">
                     <FadeInSection>
                     <CardGroup>
@@ -48,7 +46,7 @@ const Projects = () => {
                         <Project
                             title="Remote Host"
                             img={cImg}
-                            desc="This was the final assignment for WSU CS 360 where the goal of it is (in a way) to act like terminal based FTP application."
+                            desc="This was the final assignment for WSU CS 360 where the goal of it is (in a way) to act like a terminal-based FTP application."
                             link="https://github.com/tamnguyen98/C-Coding/tree/master/Protocols/(Final)Remote_Host"/>
                         <Project
                             title="Word Pairs Hashing"
@@ -57,41 +55,36 @@ const Projects = () => {
                             link="https://github.com/tamnguyen98/C-Coding/tree/master/Other_Low_Level/Word-Pairs-Hashing"/>
                     </CardGroup>
                     </FadeInSection>
-                    {/* <CardGroup>
-                        <Project
-                            title=""
-                            img={}
-                            desc=""
-                            link=""/>
-                    </CardGroup> */}
                     </Container>
                 </div>
             <div className="diagonalBottom2"/>
 
             {/*                                                         PYTHON                                                       */}
             <Container fluid className="center">
-                <CardGroup>
-                    <Project
-                        title="CVS to SQL"
-                        img={pyImg}
-                        desc="This program takes a database csv (pre-given) file and parse all the tuples to be added to a MYSQL database via python."
-                        link="https://github.com/tamnguyen98/Python-Coding/tree/master/Python-SQL-study"/>
-                    <Project
-                        title="Stock Market Prediction"
-                        img={pyImg}
-                        desc="A program made for prediction stock market prices using. This program was a pair programming project for my Machine Learning Class."
-                        link="https://gitlab.encs.vancouver.wsu.edu/john.bunn/483-group/-/blob/master/project1/main.pdf"/>
-                    <Project
-                        title="VAL-Compression"
-                        img={pyImg}
-                        desc="Disregard the name, this program was made to learn more about VAL compression. Read a given data table, convert it to bitmap, and compress it with 32/64 bit VAL compression."
-                        link="https://github.com/tamnguyen98/Python-Coding/tree/master/WAH-compression-study"/>
-                    <Project
-                        title="Shifts Logger"
-                        img={pyImg}
-                        desc="A small automation tool I made to log my part time job's shift via automation."
-                        link="https://github.com/tamnguyen98/wsuv-time-logger"/>
-                </CardGroup> 
+                <FadeInSection>
+                    <CardGroup>
+                        <Project
+                            title="CVS to SQL"
+                            img={pyImg}
+                            desc="This program takes a database csv (pre-given) file and parse all the tuples to be added to a MYSQL database via python."
+                            link="https://github.com/tamnguyen98/Python-Coding/tree/master/Python-SQL-study"/>
+                        <Project
+                            title="Stock Market Prediction"
+                            img={pyImg}
+                            desc="A program made for prediction stock market prices using. This program was a pair programming project for my Machine Learning Class."
+                            link="https://gitlab.encs.vancouver.wsu.edu/john.bunn/483-group/-/blob/master/project1/main.pdf"/>
+                        <Project
+                            title="VAL-Compression"
+                            img={pyImg}
+                            desc="Disregard the name, this program was made to learn more about VAL compression. Read a given data table, convert it to bitmap, and compress it with 32/64 bit VAL compression."
+                            link="https://github.com/tamnguyen98/Python-Coding/tree/master/WAH-compression-study"/>
+                        <Project
+                            title="Shifts Logger"
+                            img={pyImg}
+                            desc="A small automation tool I made to log my part time job's shift via automation."
+                            link="https://github.com/tamnguyen98/wsuv-time-logger"/>
+                    </CardGroup> 
+                </FadeInSection>
             </Container>
              <div className="diagonalTop2"/>
                 <div className="diagonalContent center">
@@ -117,23 +110,25 @@ const Projects = () => {
                 </div>
             <div className="diagonalBottom2"/>
                 <div className="center">
-                <CardGroup style={{width:"50%"}}>
-                    <Project
-                        title="Portfolio Website"
-                        img={reactImg}
-                        desc="This site was made with React.js and it's my first React project I've made."
-                        link="https://tamnguyen98.github.io/"/>
-                    <Project
-                        title="Autolab (Capstone)"
-                        img={rubyImg}
-                        desc="My role during this Ruby on Rail project was code review, debug and maintain, implementing new UX features, and implementing/fixing setup script for a smooth development."
-                        link="https://gitlab.encs.vancouver.wsu.edu/autolab-project/m4/Autolab"/>
-                    <Project
-                        title="LGD Professional Painting"
-                        img={reactImg}
-                        desc="A React static website I develope for a (my first) client."
-                        link="https://lgdprofessionalpainting.expert/"/>
-                </CardGroup>
+                <FadeInSection>
+                    <CardGroup style={{width:"50%"}}>
+                        <Project
+                            title="Portfolio Website"
+                            img={reactImg}
+                            desc="This site was made with React.js and it's my first React project I've made."
+                            link="https://tamnguyen98.github.io/"/>
+                        <Project
+                            title="Autolab (Capstone)"
+                            img={rubyImg}
+                            desc="My role during this Ruby on Rail project was code review, debug and maintain, implementing new UX features, and implementing/fixing setup script for a smooth development."
+                            link="https://gitlab.encs.vancouver.wsu.edu/autolab-project/m4/Autolab"/>
+                        <Project
+                            title="LGD Professional Painting"
+                            img={reactImg}
+                            desc="A React static website I develope for a (my first) client."
+                            link="https://lgdprofessionalpainting.expert/"/>
+                    </CardGroup>
+                </FadeInSection>
                 </div>
         </FadeInSection>
 
