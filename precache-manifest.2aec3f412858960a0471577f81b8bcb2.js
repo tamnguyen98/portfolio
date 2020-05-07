@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2d125489e33df616e14da2b57b53b89",
+    "revision": "27c0b1e06f5ceebe4790d9654be933e8",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c9c029413eb4b8621b5a",
-    "url": "/portfolio/static/css/main.ed458029.chunk.css"
+    "revision": "dcf7f0015eb3a21a5cf6",
+    "url": "/portfolio/static/css/main.4fea6215.chunk.css"
   },
   {
     "revision": "c88b744dd7c36c912ab6",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.c753239e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9c029413eb4b8621b5a",
+    "revision": "dcf7f0015eb3a21a5cf6",
     "url": "/portfolio/static/js/main.e6bdf929.chunk.js"
   },
   {
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "df541540630bee17efdc050058d799d1",
     "url": "/portfolio/static/media/WSU-V.df541540.jpg"
+  },
+  {
+    "revision": "8c669ad6f439d49c843a21be7f8ee63f",
+    "url": "/portfolio/static/media/Wavey-Fingerprint.8c669ad6.svg"
   },
   {
     "revision": "22405bd1765e2615f0d8d3542248fb1f",
