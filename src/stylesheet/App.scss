@@ -93,7 +93,13 @@ h1, h2, h3 {
     text-align: center;
   }
 }
-
+.sm-icon {
+  text-align: center;
+  font-size: 4rem;
+}
+.fab +.fab {
+  padding-left: 1rem;
+}
 .center {
   width: 100%;
   padding-left: 10%;

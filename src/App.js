@@ -23,7 +23,10 @@ function App() {
             <div id="summary" className="center">
               I'm a Software Engineer with a Bachelor of Science in Computer Science from Washington State University. 
               I enjoy building useful and meaningful apps, but random quirky projects are pretty fun too. 
-              I have dipped my toes in a variety of projects, ranging from web dev to AI. Feel free to visit my <a href="https://github.com/tamnguyen98" target="_blank" rel="noopener noreferrer">Github page</a>
+              I have dipped my toes in a variety of projects, ranging from web dev to AI. Feel free to visit my
+            </div>
+            <div className="center sm-icon">
+            <a className="fab fa-github-square" style={{color:"white"}} href="https://github.com/tamnguyen98" target="_blank" rel="noopener noreferrer"/><a className="fab fa-linkedin" style={{color:"white"}} href="https://www.linkedin.com/in/tam-nguyen-638871142/" target="_blank" rel="noopener noreferrer"/>
             </div>
         </div>
         <div className="diagonalBottom"/>
