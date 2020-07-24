@@ -1,29 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.24e1405e.chunk.css",
-    "main.js": "/portfolio/static/js/main.f9381518.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.f9381518.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.48dc8cff.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.48dc8cff.js.map",
-    "static/js/2.f9cafcec.chunk.js": "/portfolio/static/js/2.f9cafcec.chunk.js",
-    "static/js/2.f9cafcec.chunk.js.map": "/portfolio/static/js/2.f9cafcec.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.dd1f0074530dbcb6632863d9ffcf3d4d.js": "/portfolio/precache-manifest.dd1f0074530dbcb6632863d9ffcf3d4d.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.24e1405e.chunk.css.map": "/portfolio/static/css/main.24e1405e.chunk.css.map",
-    "static/js/2.f9cafcec.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f9cafcec.chunk.js.LICENSE.txt",
-    "static/media/CLARK.jpg": "/portfolio/static/media/CLARK.e8adab1e.jpg",
-    "static/media/Java_img.svg": "/portfolio/static/media/Java_img.13908971.svg",
-    "static/media/WSU-V.jpg": "/portfolio/static/media/WSU-V.df541540.jpg",
-    "static/media/c_img.svg": "/portfolio/static/media/c_img.22405bd1.svg",
-    "static/media/python_img.svg": "/portfolio/static/media/python_img.5029bd34.svg",
-    "static/media/react_img.svg": "/portfolio/static/media/react_img.1f6a76a4.svg",
-    "static/media/ruby_img.svg": "/portfolio/static/media/ruby_img.d4d0fd6a.svg"
+    "main.css": "/static/css/main.5dd14ceb.chunk.css",
+    "main.js": "/static/js/main.108144a1.chunk.js",
+    "main.js.map": "/static/js/main.108144a1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b8b9f84b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b8b9f84b.js.map",
+    "static/js/2.a74d9060.chunk.js": "/static/js/2.a74d9060.chunk.js",
+    "static/js/2.a74d9060.chunk.js.map": "/static/js/2.a74d9060.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6fbf68f1456e5ced7057f43d6c37451d.js": "/precache-manifest.6fbf68f1456e5ced7057f43d6c37451d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5dd14ceb.chunk.css.map": "/static/css/main.5dd14ceb.chunk.css.map",
+    "static/js/2.a74d9060.chunk.js.LICENSE.txt": "/static/js/2.a74d9060.chunk.js.LICENSE.txt",
+    "static/media/autolab.gif": "/static/media/autolab.85c224d7.gif",
+    "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
+    "static/media/logo.svg": "/static/media/logo.2810a88b.svg",
+    "static/media/portrait1.jpg": "/static/media/portrait1.06868dd6.jpg",
+    "static/media/portrait2.jpg": "/static/media/portrait2.71bf3896.jpg",
+    "static/media/project1.jpg": "/static/media/project1.54977214.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.48dc8cff.js",
-    "static/js/2.f9cafcec.chunk.js",
-    "static/css/main.24e1405e.chunk.css",
-    "static/js/main.f9381518.chunk.js"
+    "static/js/runtime-main.b8b9f84b.js",
+    "static/js/2.a74d9060.chunk.js",
+    "static/css/main.5dd14ceb.chunk.css",
+    "static/js/main.108144a1.chunk.js"
   ]
 }
