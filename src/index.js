@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Router } from "react-router-dom";
+import { createBrowserHistory } from "history";
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
-import { BrowserRouter } from 'react-router-dom';
+
+//import './App.css';
+import './assets/scss/style.scss';
+
+const history = createBrowserHistory();
+
 ReactDOM.render(
-  <BrowserRouter>
+  <Router history={history}>
     <App />
-  </BrowserRouter>,
+  </Router>,
   document.getElementById('root')
 );
 

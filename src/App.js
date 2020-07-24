@@ -1,41 +1,53 @@
 import React from 'react';
-import './App.css';
-import { Layout, Content } from 'react-mdl';
-import Routing from './components/routing';
-import {Navbar, Container} from 'react-bootstrap'
-import { Link, Route } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { withRouter, Switch } from 'react-router-dom';
+import AppRoute from './utils/AppRoute';
+import ScrollReveal from './utils/ScrollReveal';
+import ReactGA from 'react-ga';
 
+// Layouts
+import LayoutDefault from './layouts/LayoutDefault';
 
-function App() {
-  return (
-    <div id="main">
-    <Layout>
-        <Container className="nav-bar">
-            <Navbar expand="lg" sticky="top" variant="dark" style={{justifyContent:"center"}} className="importance-bold">
-                <Navbar.Brand><Link className="font-color" to="/">HOME</Link></Navbar.Brand>
-                <Navbar.Brand><Link className="font-color" to="/about">ABOUT</Link></Navbar.Brand>
-                <Navbar.Brand><Link className="font-color" onClick={window.scrollTo({ top: 0, behavior: 'smooth' })} to="/projects">PROJECTS</Link></Navbar.Brand>
-            </Navbar>
-        </Container>
-        
-        <Content>
-            <div className="page">
-                <Route render={({location}) => (
-                    <TransitionGroup>
-                        <CSSTransition
-                        key={location.key}
-                        timeout={700}
-                        classNames="fade">
-                            <Routing location={location}/>
-                        </CSSTransition>
-                    </TransitionGroup>
-                )}/>
-            </div>
-        </Content>
-    </Layout>
-  </div>  
-  );
+// Views 
+import Home from './views/Home';
+
+// Initialize Google Analytics
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+
+const trackPage = page => {
+  ReactGA.set({ page });
+  ReactGA.pageview(page);
+};
+
+class App extends React.Component {
+
+  componentDidMount() {
+    const page = this.props.location.pathname;
+    document.body.classList.add('is-loaded')
+    this.refs.scrollReveal.init();
+    trackPage(page); 
+  }
+
+  // Route change
+  componentDidUpdate(prevProps) {
+    const currentPage = prevProps.location.pathname + prevProps.location.search;
+    const nextPage = this.props.location.pathname + this.props.location.search;    
+    if (currentPage !== nextPage) {
+      this.refs.scrollReveal.init();
+      trackPage(nextPage);
+    }
+  }
+
+  render() {
+    return (
+      <ScrollReveal
+        ref="scrollReveal"
+        children={() => (
+          <Switch>
+            <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          </Switch>
+        )} />
+    );
+  }
 }
 
-export default App;
+export default withRouter(props => <App {...props} />);
