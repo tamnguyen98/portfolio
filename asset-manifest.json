@@ -1,28 +1,29 @@
 {
   "files": {
     "main.css": "/static/css/main.1f2e7f8f.chunk.css",
-    "main.js": "/static/js/main.71dbf860.chunk.js",
-    "main.js.map": "/static/js/main.71dbf860.chunk.js.map",
+    "main.js": "/static/js/main.7a5d26ee.chunk.js",
+    "main.js.map": "/static/js/main.7a5d26ee.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b8b9f84b.js",
     "runtime-main.js.map": "/static/js/runtime-main.b8b9f84b.js.map",
     "static/js/2.a74d9060.chunk.js": "/static/js/2.a74d9060.chunk.js",
     "static/js/2.a74d9060.chunk.js.map": "/static/js/2.a74d9060.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.099b17ef33c4c142f855f4420de26f2f.js": "/precache-manifest.099b17ef33c4c142f855f4420de26f2f.js",
+    "precache-manifest.1fe06f9f4ad91a4fa5d63514d02783f7.js": "/precache-manifest.1fe06f9f4ad91a4fa5d63514d02783f7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.1f2e7f8f.chunk.css.map": "/static/css/main.1f2e7f8f.chunk.css.map",
     "static/js/2.a74d9060.chunk.js.LICENSE.txt": "/static/js/2.a74d9060.chunk.js.LICENSE.txt",
+    "static/media/IMG_20200830_145823_null.jpg": "/static/media/IMG_20200830_145823_null.faf24b48.jpg",
+    "static/media/Skin Care Image.jpg": "/static/media/Skin Care Image.27be9dd6.jpg",
     "static/media/autolab.gif": "/static/media/autolab.85c224d7.gif",
     "static/media/style.scss": "/static/media/illustration-section-02.63d0555d.svg",
     "static/media/logo.svg": "/static/media/logo.2810a88b.svg",
     "static/media/portrait1.jpg": "/static/media/portrait1.06868dd6.jpg",
-    "static/media/portrait2.jpg": "/static/media/portrait2.71bf3896.jpg",
     "static/media/project1.jpg": "/static/media/project1.54977214.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.b8b9f84b.js",
     "static/js/2.a74d9060.chunk.js",
     "static/css/main.1f2e7f8f.chunk.css",
-    "static/js/main.71dbf860.chunk.js"
+    "static/js/main.7a5d26ee.chunk.js"
   ]
 }
