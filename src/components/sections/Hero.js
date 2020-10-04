@@ -6,7 +6,7 @@ import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 import Portrait1 from '../../assets/images/portrait1.jpg'
-import Portrait2 from '../../assets/images/portrait2.jpg'
+import Portrait2 from '../../assets/images/IMG_20200830_145823_null.jpg'
 
 
 const propTypes = {
@@ -76,7 +76,7 @@ class HeroFull extends React.Component {
                 </p>
                 <div className="reveal-from-bottom" data-reveal-delay="600">
                   <ButtonGroup>
-                    <Button tag="a" color="primary" wideMobile href="https://www.dropbox.com/s/c637tksw4ez1tiq/July%20Resume.pdf?dl=0">
+                    <Button tag="a" color="primary" wideMobile href="https://www.dropbox.com/s/in78y0b51k32jdb/october%20resume.pdf?dl=0">
                       Resume
                     </Button>
                     <Button tag="a" color="dark" wideMobile href="https://github.com/tamnguyen98">

@@ -100,7 +100,7 @@ class FeaturesSplit extends React.Component {
                     Group Project (2)
                   </div>                  
                   <h3 className="mt-0 mb-12">
-                    Skin Care Analyzer
+                    <a href="https://play.google.com/store/apps/details?id=info.ingredientchecker.imgscanner">Skin Care Analyzer</a>
                   </h3>
                   <p className="m-0">
                   As seen from the video, this app lets the user take a picture of their <i>skin care product</i>'s ingredients, which will grab the text using an OCR to analyze and calculate the quality of the product.
@@ -112,7 +112,11 @@ class FeaturesSplit extends React.Component {
                     imageFill && 'split-item-image-fill'
                   )}
                   data-reveal-container=".split-item">
-                  <iframe width="560" height="335" src="https://www.youtube-nocookie.com/embed/4pR0RKU0lqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <Image
+                    src={require('./../../assets/images/Skin Care Image.jpg')}
+                    alt="Features split 03"
+                    width={528}
+                    height={396} />
                 </div>
               </div>
 

@@ -96,22 +96,22 @@ class Testimonial extends React.Component {
                 </div>
               </div>
 
-              {/* <div className="tiles-item reveal-from-left" data-reveal-delay="200">
+              <div className="tiles-item reveal-from-left" data-reveal-delay="200">
                 <div className="tiles-item-inner">
                   <div className="testimonial-item-content">
                     <p className="text-sm mb-0">
-                      — Tam is a 
+                      — Tam is a dependable worker. I was able to ask him to complete any task and he always exceeded expectation. He requires little to no oversight and produces quality work every time.
                       </p>
                   </div>
                   <div className="testimonial-item-footer text-xs mt-32 mb-0 has-top-divider">
-                    <span className="testimonial-item-name text-color-high">Ben Stafford</span>
+                    <span className="testimonial-item-name text-color-high">Rebecca Daniel</span>
                     <span className="text-color-low"> / </span>
                     <span className="testimonial-item-link">
-                      <a href="#0">AppName</a>
+                      Co-worker
                     </span>
                   </div>
                 </div>
-              </div> */}
+              </div>
 
             </div>
           </div>
