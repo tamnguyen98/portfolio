@@ -68,10 +68,59 @@ class FeaturesSplit extends React.Component {
             <SectionHeader data={sectionHeader} className="center-content" />
             <div className={splitClasses}>
 
+            <div className="split-item">
+                <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                  <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                    C# (Winform) Project
+                  </div>
+                  <h3 className="mt-0 mb-12">
+                    <a href="https://github.com/tamnguyen98/Doorbell-notifier" target="_blank">Doorbell Notifier</a>
+                  </h3>
+                  <p className="m-0">
+                    A hardware and software project that alerts your Windows PC when someone rang your doorbell. This is good if your room is far from the bell and you often listen to music through headphones.
+                  </p>
+                </div>
+                <div className={
+                  classNames(
+                    'split-item-image center-content-mobile reveal-from-bottom',
+                    imageFill && 'split-item-image-fill'
+                  )}
+                  data-reveal-container=".split-item">
+                    <video class="vjs-tech" id="vjs_video_1035_html5_api" tabindex="-1" role="application" preload="metadata" muted="muted" src="https://dms.licdn.com/playlist/C4E05AQEKcMvyTaZzmw/mp4-720p-30fp-crf28/0?e=1604548800&amp;v=beta&amp;t=L8PPJIyzrOPUZppqmELBDDMb136XSJyGNYF53kQCGfU" autoplay="autoplay"></video>
+                  
+                </div>
+              </div>
+
+            <div className="split-item">
+                <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                  <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                    C# (Winform) Project
+                  </div>
+                  <h3 className="mt-0 mb-12">
+                    <a href="https://github.com/tamnguyen98/Img4Ppt" target="_blank">Image for Powerpoint</a>
+                  </h3>
+                  <p className="m-0">
+                    This windows application is made with Winform to provide images based on the title and <b>bolded phrases</b> in the description and generate a Powerpoint file.
+                  </p>
+                </div>
+                <div className={
+                  classNames(
+                    'split-item-image center-content-mobile reveal-from-bottom',
+                    imageFill && 'split-item-image-fill'
+                  )}
+                  data-reveal-container=".split-item">
+                  <Image
+                    src="https://github.com/tamnguyen98/Img4Ppt/raw/master/Application-Preview.png"
+                    alt="Features split 01"
+                    width={528}
+                    height={396} />
+                </div>
+              </div>
+
               <div className="split-item">
                 <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                   <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                    Independent Project
+                    Java Project
                   </div>
                   <h3 className="mt-0 mb-12">
                     <a href="https://github.com/tamnguyen98/Update-Transfer-Only" target="_blank">Transfer app's update only tool</a>
@@ -97,7 +146,7 @@ class FeaturesSplit extends React.Component {
               <div className="split-item">
                 <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
                   <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                    Group Project (2)
+                    Android Project
                   </div>                  
                   <h3 className="mt-0 mb-12">
                     <a href="https://play.google.com/store/apps/details?id=info.ingredientchecker.imgscanner">Skin Care Analyzer</a>
@@ -123,7 +172,7 @@ class FeaturesSplit extends React.Component {
               <div className="split-item">
                 <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                   <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                    Independent Work
+                    Ruby on Rails Project
                   </div>                  
                   <h3 className="mt-0 mb-12">
                     <a href="https://github.com/autolab/Autolab/pull/1139" target="_blank">Autolab dark theme implementation</a>
